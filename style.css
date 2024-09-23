@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --font-color: white;   
+    --background-color-1: #222831;
+    --background-color-2: #29A19C;
+}
+html{
+    font-size: 62.5%;
+    scrollbar-width: none;
+}
+body{
+    background-color: var(--background-color-1);
+
+}
+/*todo-----  */
+/*!--- Reusable Components {Start} ---*/
+/*todo-----  */
+h1,
+h2,
+h3{
+    font-family: "Grand Hotel", cursive;
+    text-transform: capitalize;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: var(--font-color);
+}
+h1{
+    font-size: 15.3rem;
+}
+h2{
+    font-size: 12.5rem;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 3.32rem;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.46rem;
+}
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+.container{
+    max-width: 144rem;
+    padding: 0 10rem;
+}
+.orderBtn{
+    text-transform: capitalize;
+    font-size: 3.34rem;
+    font-weight: 700;
+    background-color: var(--background-color-2);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+}
+/*todo-----  */
+/*!--- Reusable Components {End} ---*/
+/*todo-----  */
+
+/*todo-----  */
+/*!--- Navbar {Start} ---*/
+/*todo-----  */
+header{
+    position: fixed;
+    width: 100%;
+    height: 10rem;
+    background-color: var(--background-color-1);
+    padding: 1.5rem 3rem;
+    z-index: 99;
+}
+header nav{
+    max-width: 144rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header nav .navBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav .navBtn ul{
+    display: flex;
+    margin-top: 1.5rem;
+}
+ul li{
+    list-style: none;
+    padding: 0 1.5rem ;
+}
+.navBtn ul li a{
+    position: relative;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.navBtn ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--background-color-2);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+}
+.navBtn ul li a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/*todo-----  */
+/*!--- Navbar {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Home Section {Start} ---*/
+/*todo-----  */
+.home-section{
+    background-color: var(--background-color-1);
+    width: 100%;
+    height: 78rem;
+    padding-top: 8rem;
+}
+.home-section .container{
+    display: flex;
+    position: relative;
+    padding: 0 6rem;
+}
+.home-section h1{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.home-section h4{
+    padding: 1rem 0;
+}
+.home-section p{
+    width: 90%;
+    margin-bottom: 2.5rem;
+}
+.home-section img{
+    position: absolute;
+    right: 0;
+    bottom: -25rem;
+    width: 55%;
+    height: auto;
+}
+
+/*todo-----  */
+/*!--- Home Section {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Menu Section Part 1 {Start} ---*/
+/*todo-----  */
+.menu-section-p1{
+    position: relative;
+    height: 60rem;
+    width: 100%;
+}
+.menu-section-p1::before{
+    content: "";
+    width: 100%;
+    height: 25rem;
+    background-image: url(Images/curve-01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -23rem;
+}
+.menu-section-p1::after{
+    content: "";
+    width: 100%;
+    height: 28rem;
+    background-image: url(Images/curve-02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -45%;
+}
+.menu-section-p1 .container{
+    display: flex;
+    background-color: var(--background-color-2);
+    height: 100%;
+}
+.span_1_of_3{
+margin: auto 0;
+justify-content: center;
+align-items: center;
+}
+.span_1_of_3 h2{
+    padding: 5rem 2rem;
+}
+.span_1_of_3 a{
+    background-color: var(--background-color-1);
+}
+.span_2_of_3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.span_2_of_3 img{
+    padding-bottom: 5rem;
+    width: 50%;
+}
+.span_2_of_3 p{
+    text-align: right;
+    width: 47%;
+}
+/*todo-----  */
+/*!--- Menu Section Part 1 {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Menu Section Part 2 {Start} ---*/
+/*todo-----  */
+.menu-section-p2{
+    width: 100%;
+    padding-top: 40rem;
+    height: 100rem;
+}
+.menu-section-p2 .container{
+    background-color: var(--background-color-1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.menu-section-p2 .span_2_of_3{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+}
+.menu-section-p2 .span_2_of_3 p{
+    text-align: left;
+}
+.menu-section-p2 .span_1_of_3 h2{
+    text-align: right;
+}
+.menu-section-p2 .span_1_of_3 a.orderBtn{
+    float: right;
+    background-color: var(--background-color-2);
+}
+/*todo-----  */
+/*!--- Menu Section Part 2 {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Menu Section Part 3 {Start} ---*/
+/*todo-----  */
+.menu-section-p3{
+    width: 100%;
+    height: 65rem;
+}
+.menu-section-p3 .container{
+    background-color: var(--background-color-1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.menu-section-p3 .span_2_of_3{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: left;
+    align-items: end;
+}
+.menu-section-p3 .span_2_of_3 p{
+    text-align: right;
+}
+.menu-section-p3 .span_1_of_3 h2{
+    text-align: left;
+}
+.menu-section-p3 .span_1_of_3 a.orderBtn{
+    float: left;
+    background-color: var(--background-color-2);
+}
+/*todo-----  */
+/*!--- Menu Section Part 3 {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Voucher Section {Start} ---*/
+/*todo-----  */
+.voucher-section{
+    width: 100%;
+    height: 75rem;
+}
+.voucher-section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.voucher-section .voucherBtn{
+    display: flex;
+    justify-content: center;
+} 
+.voucher-section .voucherBtn img{
+    margin: 5rem ;
+    width: 75%;
+    height: auto;
+    transition: width 300ms ease-in-out;
+}
+.voucher-section img:hover{
+    width: 100%;
+}
+/*todo-----  */
+/*!--- Voucher Section {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Customer Section {Start} ---*/
+/*todo-----  */
+.review-section{
+    width: 100%;
+    height: 100rem;
+}
+.review-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.review-section h2{
+    margin: 0 auto;
+}
+.review-section .box{
+    display: flex;
+    padding: 5rem auto;
+}
+.review-section .box .person1,
+.review-section .box .person2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    
+}
+.review-section .box p{
+    width: 75%;
+    text-align: center;
+}
+/*todo-----  */
+/*!--- Customer Section {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- About Section {Start} ---*/
+/*todo-----  */
+.about-section{
+    width: 100%;
+    height: 85rem;
+}
+.about-section .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color-2);
+    text-align: center;
+}
+.about-section .container::before{
+    content: "";
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: -20rem;
+    background-image: url(Images/curve-03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-section .container::after{
+    content: "";
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    bottom: -28rem;
+    background-image: url(Images/curve-04.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-section span{
+    padding-top: 7.5rem;
+}
+.about-section h2{
+    text-transform: none;
+}
+.about-section span h4{
+    text-transform: none;
+    font-weight: 700;
+}
+.about-section span p{
+    font-size: 3.3rem;
+}
+/*todo-----  */
+/*!--- About Section {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Shop Section {Start} ---*/
+/*todo-----  */
+.shop-section{
+    width: 100%;
+    height: 100rem;
+}
+.shop-section h2{
+    text-align: center;
+}
+.shop-section .container .boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.shop-section .container .box1,
+.shop-section .container .box2,
+.shop-section .container .box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.shop-section .container .box2{
+    margin: 0 15rem;
+}
+.shop-section .container .boxes h4{
+    width: 30rem;
+    position: relative;
+    margin: 5rem 0;
+    text-transform: capitalize;
+}
+.shop-section .container .boxes h4::before{
+    content: '';
+    width: 30rem;
+    height: 10rem;
+    position: absolute;
+    left: 2.5rem;
+    top: -1rem;
+    background-image: url(Images/h4\ bg.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+/*todo-----  */
+/*!--- Shop Section {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Contact Section {Start} ---*/
+/*todo-----  */
+.contact-section{
+    width: 100%;
+}
+.contact-section .container{
+    position: relative;
+    height: 30rem;
+    background-color: var(--background-color-2);
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+.contact-section .container::before{
+    content: '';
+    position: absolute;
+    top: -19rem;
+    left: 0;
+    width: 100%;
+    height: 30rem;
+    background-image: url(Images/curve-05.png);
+    background-repeat: no-repeat;
+    
+}
+.contact-section .info{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-section .span_1_of_4 ul,
+.contact-section .span_1_of_4 ul li{
+    padding: 0;
+    margin: 0;
+}
+.contact-section .span_1_of_4 ul{
+    margin-top: 4rem;
+}
+.contact-section .span_1_of_4 ul li a{
+    font-size: 2rem;
+}
+/*todo-----  */
+/*!--- Contact Section {End} ---*/
+/*todo-----  */
+
+/* ----------------------------- */
+/* ----------------------------- */
+
+/*todo-----  */
+/*!--- Footer Section {Start} ---*/
+/*todo-----  */
+.footer-section{
+    width: 100%;
+}
+.footer-section .container{
+    height: 5rem;
+    background-color: var(--background-color-2);
+}
+.footer-section .container footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+footer ul li a{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+/*todo-----  */
+/*!--- Footer Section {End} ---*/
+/*todo-----  */

@@ -1,0 +1,373 @@
+/*todo xl */
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1140px) {
+    .home-section{
+        height: 100rem;
+    }
+    .menu-section-p1::after{
+        bottom: -91%;
+    }
+    .shop-section .container .box2{
+        margin: 0 3rem;
+    }
+    .contact-section .span_1_of_4 h4{
+        font-size: 2.5rem;  
+        font-weight: 700;
+    }
+}
+/*todo lg */
+@media (max-width: 1024px) {
+    .menu-section-p1{
+        height: 60rem;
+        padding-bottom: 5rem;
+    }
+    .menu-section-p1::after{
+        bottom: -38%;
+    }
+    .menu-section-p1 .container .span_2_of_3{
+        padding-top: 10rem;
+    }
+    .menu-section-p2{
+        padding-top: 25rem;
+        height: 85rem;
+    }
+}
+/*todo md */
+@media (max-width: 900px){
+    .orderBtn{
+        font-size: 3rem;
+    }
+    .navBtn ul li a{
+        font-size: 2rem;
+    }
+    .review-section .box img{
+        width: 85%;
+        margin: 4rem 0;
+    }
+    .shop-section .container .boxes img{
+        width: 85%;
+    }
+    .shop-section .container .boxes h4::before{
+        width: 25rem;
+    }
+    .contact-section .span_1_of_4 h4{
+        font-size: 2rem;  
+        font-weight: 700;
+    }
+    .contact-section .span_1_of_4 ul li a{
+        font-size: 1.8rem;
+    }
+}
+
+/*todo md */
+@media (max-width: 768px) {
+    p{
+        font-size: 1.4rem;
+    }
+    .orderBtn{
+        font-size: 2.5rem;
+    }
+    .review-section h2{
+        text-align: center;
+    }
+    .review-section{
+        height: 110rem;
+    }
+    .shop-section .container .boxes h4{
+        width: 20rem;
+        font-size: 2.8rem;
+    }
+    .shop-section .container .boxes h4::before{
+        width: 125%;
+        scale: .75;
+        top: -1.5rem;
+        left: -2.5rem;
+    }
+    .contact-section .span_1_of_4 h4{
+        font-size: 1.6rem;
+    }
+    .contact-section .span_1_of_4 ul li a{
+        font-size: 1.4rem;
+    }
+    .contact-section .container{
+        height: 22rem;
+    }
+    .footer-section .container{
+        height: 8rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/*todo sm */
+@media (max-width: 640px) {
+    h2{
+        font-size: 9rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .home-section{
+        height: 60rem;
+    }
+    .home-section .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-section .container .span_1_of_2{
+        width: 100%;
+    }
+    .home-section h1,
+    .home-section h4,
+    .home-section p{
+        text-align: center;
+    }
+    .home-section h1{
+        font-size: 12rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .home-section p{
+        width: 100%;
+    }
+    .home-section a{
+        position: relative;
+        left: 32.5%;
+    }
+    .home-section img{
+        display: none;
+    }
+    .menu-section-p1{
+        height: 85rem;
+    }
+    .menu-section-p1 .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-section-p1 .span_1_of_3,
+    .menu-section-p1 .span_2_of_3,
+    .menu-section-p1 .span_2_of_3 img,
+    .menu-section-p1 .span_2_of_3 p{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-section-p1 .span_1_of_3 h2{
+        font-size: 9rem;
+    }
+    .menu-section-p1 .span_2_of_3 img{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .menu-section-p1::after{
+        bottom: -25%;
+    }
+    .menu-section-p2{
+        height: 70rem;
+    }
+    .menu-section-p3{
+        height: 45rem;
+    }
+    .menu-section-p2 .span_1_of_3 h2,
+    .menu-section-p3 .span_1_of_3 h2{
+        text-align: center;
+        padding-top: 0;
+    }
+    .menu-section-p2 .span_1_of_3 a.orderBtn,
+    .menu-section-p3 .span_1_of_3 a.orderBtn{
+            font-size: 1.6rem;
+    }
+    .voucher-section{
+        height: 55rem;
+    }
+    .shop-section .container .boxes h4{
+        background-color: #29A19C;
+        padding:  .1rem;
+        width: 16rem;
+        border-radius: 1rem;
+    }
+    .shop-section .container .boxes h4::before{
+        content: none;
+    }
+    .contact-section .container{
+        height: 35rem;
+    }
+    .contact-section .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .contact-section .container .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+        
+    }
+    .contact-section .container .info .span_1_of_4{
+        width: 40%;
+    }
+}
+
+/*todo xs */
+@media (max-width: 475px) {
+    .home-section{
+        height: 80rem;
+    }
+    .home-section a.orderBtn{
+        left: 25%;
+    }
+    .menu-section-p1{
+        height: 84rem;
+    }
+    .menu-section-p1::after{
+        bottom: -26%;
+    }
+    .menu-section-p1 .container .span_2_of_3{
+        padding-top: 0;
+    }
+    .menu-section-p2{
+        height: 90rem;
+    }
+    .menu-section-p2 .container{
+        flex-direction: column-reverse;
+    }
+    .menu-section-p2 .span_1_of_3,
+    .menu-section-p2 .span_2_of_3{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-section-p2 .span_1_of_3{
+        margin-bottom: 5rem;
+    }
+    .menu-section-p2 .span_1_of_3 a.orderBtn{
+        float: none;
+        position: relative;
+        left: 27%;
+    }
+    .menu-section-p2 .span_2_of_3 p{
+        width: 100%;
+        text-align: center;
+    }
+    .menu-section-p3{
+        height: 75rem;
+    }
+    .menu-section-p3 .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-section-p3 .span_2_of_3,
+    .menu-section-p3 .span_1_of_3{
+        width: 100%;
+    }
+    .menu-section-p3 .span_2_of_3 img{
+        float: none;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    .menu-section-p3 .span_2_of_3 p{
+        text-align: center;
+        width: 100%;
+    }
+    .menu-section-p3 .span_1_of_3 a.orderBtn{
+        float: none;
+        position: relative;
+        left: 30%;
+    }
+    .voucher-section{
+        height: 50rem;
+    }
+    .review-section{
+        height: 150rem;
+    }
+    .review-section .box{
+        flex-direction: column;
+    }
+    .about-section .container::before{
+        top: -19.5rem;
+    }
+    .shop-section{
+        height: 180rem;
+    }
+    .shop-section h2{
+        margin-top: 15rem;
+    }
+    .shop-section .container .boxes{
+        flex-direction: column;
+    }
+    .shop-section .container .boxes h4{
+        margin: 2rem 0;
+    }
+    .shop-section .container .box1,
+    .shop-section .container .box2,
+    .shop-section .container .box3{
+        margin-bottom: 3rem;
+    }
+    footer ul li a{
+        font-size: 1.2rem;
+    }
+}
+/*todo xxs */
+@media (max-width: 375px) {
+    h2{
+        font-size: 7.5rem;
+    }
+    .container{
+        padding:  0 5rem;
+    }
+    .home-section h1{
+        font-size: 10rem;
+    }
+    .home-section a.orderBtn{
+        left: 8%;
+    }
+    .menu-section-p1 .span_1_of_3 h2{
+        font-size: 7.5rem;
+    }
+    .menu-section-p1 .span_1_of_3 a{
+        font-size: 1.5rem;
+    }
+    .menu-section-p2 .span_1_of_3 a.orderBtn{
+        left: 27%;
+    }
+    .menu-section-p2 .span_2_of_3 img,
+    .menu-section-p3 .span_2_of_3 img{
+        width: 60%;
+    }
+    .voucher-section .orderBtn{
+        font-size: 1.6rem;
+    }
+    .about-section .container::after{
+        bottom: -29rem;
+    }
+    .about-section span h4{
+        font-size: 3rem;
+    }
+    .about-section span p{
+        font-size: 2rem;
+    }
+    .contact-section .span_2_of_4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-section .span_1_of_4 ul li a{
+        font-size: 1.2rem;
+    }
+    footer ul li{
+        padding: .75rem;
+    }
+}
